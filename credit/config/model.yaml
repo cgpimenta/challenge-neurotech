@@ -1,0 +1,13 @@
+seed: 1989
+num_evals_hpo: 15
+
+feat_selection:
+   missing_threshold: 0.9
+   psi_threshold: 0.2  # Índice de Estabilidade Populacional máximo
+   vif_threshold: 15   # VIF máximo
+   max_iter_vif: 50    # Número máximo de vars a serem removidas por VIF
+
+artifacts:
+  dir: artifacts
+  model_file: model.pkl
+  preproc_pipeline_file: num_vars_preproc.pkl
